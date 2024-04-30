@@ -120,3 +120,34 @@ string.addEventListener("mouseleave", () => {
         ease: "elastic.out(2,0.2)"
     })
 })
+
+
+let page4 = document.querySelector("#page4")
+let curser = document.querySelector("#curser")
+let imagediv = document.querySelector(".image")
+
+page4.addEventListener("mousemove",(dets)=>{
+    gsap.to (curser,{
+        x : dets.x,  
+        y :dets.y ,
+        duration:1
+     })
+})
+
+imagediv.addEventListener("mouseenter",()=>{
+    curser.innerHTML = "View more"
+    gsap.to (curser,{
+        scale : 2,
+        backgroundColor: "#ffffff8a",
+        
+     })  
+
+})
+imagediv.addEventListener("mouseleave",()=>{
+    curser.innerHTML = ""
+    gsap.to (curser,{
+        scale : 1,
+        backgroundColor: "white",
+     })  
+
+})
