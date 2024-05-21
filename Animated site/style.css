@@ -1,0 +1,149 @@
+@font-face {
+    font-family:primaryFont;
+    src: url(./3856NeueMachina.woff2);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+
+.section1 {
+    height: 100%;
+    /* width: 100%; */
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+.part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+nav h1{
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    font-family: primaryFont;
+}
+nav h1 i{
+    display: inline-block;
+    rotate: 45deg;
+    font-size: 2.5rem;
+}
+nav h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+nav button{
+    font-size: 1.2rem;
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.center{
+    height: 85%;
+    /* width: 100%; */
+    display: flex;
+    padding: 2rem;
+}
+.center-part1{
+    height: 100%;
+    width: 44%;
+}
+.center-part1 h1{
+    font-size: 4.2rem;
+    font-family: primaryFont;
+    line-height: 1.2;
+}
+.center-part1 p{
+    font-size: 1.5rem;
+    width: 95%;
+    margin: 1.2rem 0;
+}
+.center-part1 button{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem 1.3rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.center-part2{
+    height: 100%;
+    width: 52%;
+    position: relative;
+}
+.center-part2 img{
+    height: 80%;
+    position: absolute;
+    right: 0;
+}
+.section1bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section1bottom img{
+    height: 7rem;
+}
+
+.section2 .services{
+    padding: 1rem 1.3rem; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.services h3{
+    background-color: #9AE975;
+    font-weight: 600;
+    padding: 0.7rem;
+    border-radius: 7px;
+    font-size: 1.4rem;
+    font-family: primaryFont;
+}
+.services p{
+    width: 40%;
+    font-size: 1rem;
+}
+.container{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+.elem{
+    height: 40%;
+    width: 40%;
+    border-radius: 1.5rem;
+    border: 3px solid black;
+    /* background-color: red; */
+    flex-shrink: 0;
+    box-shadow: 0px 15px 0px black;
+    padding: 1.2rem;
+}
